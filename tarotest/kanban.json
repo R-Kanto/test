@@ -1,0 +1,218 @@
+{
+  "schemas": [
+    {
+      "field10req": {
+        "type": "rectangle",
+        "position": { "x": 10, "y": 10 },
+        "width": 190,
+        "height": 40,
+        "borderWidth": 1,
+        "borderColor": "#000000"
+      },
+      "field11": {
+        "type": "text",
+        "content": "作業番号",
+        "position": { "x": 20, "y": 20 },
+        "width": 50,
+        "height": 20,
+        "fontSize": 24,
+        "fontColor": "#000000",
+        "fontName": "ipaexg"
+      },
+      "field12": {
+        "type": "text",
+        "content": "24100301",
+        "position": { "x": 80, "y": 20 },
+        "width": 50,
+        "height": 20,
+        "fontSize": 24,
+        "fontColor": "#000000",
+        "fontName": "ipaexg"
+      },
+      "field13bc": {
+        "type": "code128",
+        "content": "This is Code 128!",
+        "position": { "x": 140, "y": 20 },
+        "backgroundColor": "#ffffff",
+        "barColor": "#000000",
+        "textColor": "#000000",
+        "includetext": false,
+        "width": 50,
+        "height": 20
+      },
+      "field20req": {
+        "type": "rectangle",
+        "position": { "x": 10, "y": 55 },
+        "width": 190,
+        "height": 40,
+        "borderWidth": 1,
+        "borderColor": "#000000",
+        "readOnly": true
+      },
+      "field21": {
+        "type": "text",
+        "content": "ブランド",
+        "position": { "x": 20, "y": 65 },
+        "width": 50,
+        "height": 20,
+        "fontSize": 24,
+        "fontColor": "#000000",
+        "fontName": "ipaexg"
+      },
+      "field22": {
+        "type": "text",
+        "content": "1115 - INSCRIRE\nアンスクリア",
+        "position": { "x": 80, "y": 65 },
+        "width": 110,
+        "height": 20,
+        "fontSize": 24,
+        "lineHeight": 1,
+        "fontColor": "#000000",
+        "fontName": "ipaexg"
+      },
+      "field30req": {
+        "type": "rectangle",
+        "position": { "x": 10, "y": 100 },
+        "width": 190,
+        "height": 40,
+        "borderWidth": 1,
+        "borderColor": "#000000",
+        "readOnly": true
+      },
+      "field31": {
+        "type": "text",
+        "content": "カテゴリ",
+        "position": { "x": 20, "y": 110 },
+        "width": 50,
+        "height": 20,
+        "fontSize": 24,
+        "fontColor": "#000000",
+        "fontName": "ipaexg"
+      },
+      "field32": {
+        "type": "text",
+        "content": "アパレル/通常",
+        "position": { "x": 80, "y": 110 },
+        "width": 110,
+        "height": 20,
+        "fontSize": 24,
+        "fontColor": "#000000",
+        "fontName": "ipaexg"
+      },
+      "field40req": {
+        "type": "rectangle",
+        "position": { "x": 10, "y": 145 },
+        "width": 190,
+        "height": 40,
+        "borderWidth": 1,
+        "borderColor": "#000000",
+        "readOnly": true
+      },
+      "field41": {
+        "type": "text",
+        "content": "枚数",
+        "position": { "x": 20, "y": 155 },
+        "width": 50,
+        "height": 20,
+        "fontSize": 24,
+        "fontColor": "#000000",
+        "fontName": "ipaexg"
+      },
+      "field42": {
+        "type": "text",
+        "content": "11",
+        "position": { "x": 80, "y": 155 },
+        "width": 110,
+        "height": 20,
+        "fontSize": 24,
+        "fontColor": "#000000",
+        "fontName": "ipaexg"
+      },
+      "field50req": {
+        "type": "rectangle",
+        "position": { "x": 10, "y": 190 },
+        "width": 92.5,
+        "height": 40,
+        "borderWidth": 1,
+        "borderColor": "#000000"
+      },
+      "field51": {
+        "type": "text",
+        "content": "採寸",
+        "position": { "x": 20, "y": 200 },
+        "width": 20,
+        "height": 20,
+        "fontSize": 24,
+        "fontColor": "#000000",
+        "fontName": "ipaexg"
+      },
+      "field52": {
+        "type": "text",
+        "content": "6",
+        "position": { "x": 80, "y": 200 },
+        "width": 20,
+        "height": 20,
+        "fontSize": 24,
+        "fontColor": "#000000",
+        "fontName": "ipaexg"
+      },
+      "field60req": {
+        "type": "rectangle",
+        "position": { "x": 107.5, "y": 190 },
+        "width": 92.5,
+        "height": 40,
+        "borderWidth": 1,
+        "borderColor": "#000000"
+      },
+      "field61": {
+        "type": "text",
+        "content": "撮影",
+        "position": { "x": 117.5, "y": 200 },
+        "width": 20,
+        "height": 20,
+        "fontSize": 24,
+        "fontColor": "#000000",
+        "fontName": "ipaexg"
+      },
+      "field62": {
+        "type": "text",
+        "content": "4",
+        "position": { "x": 175, "y": 200 },
+        "width": 20,
+        "height": 20,
+        "fontSize": 24,
+        "fontColor": "#000000",
+        "fontName": "ipaexg"
+      },
+      "field70req": {
+        "type": "rectangle",
+        "position": { "x": 10, "y": 235 },
+        "width": 190,
+        "height": 40,
+        "borderWidth": 1,
+        "borderColor": "#000000"
+      },
+      "field71": {
+        "type": "text",
+        "content": "納期",
+        "position": { "x": 20, "y": 245 },
+        "width": 50,
+        "height": 20,
+        "fontSize": 24,
+        "fontColor": "#000000",
+        "fontName": "ipaexg"
+      },
+      "field72": {
+        "type": "text",
+        "content": "10/7",
+        "position": { "x": 80, "y": 245 },
+        "width": 110,
+        "height": 20,
+        "fontSize": 24,
+        "fontColor": "#000000",
+        "fontName": "ipaexg"
+      }
+    }
+  ],
+  "basePdf": { "width": 210, "height": 297, "padding": [10, 10, 10, 10] }
+}

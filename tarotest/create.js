@@ -1,0 +1,181 @@
+const fs = require("fs");
+/* object */
+const testObj = {
+  schemas: [
+    {
+      field10req: {
+        type: "rectangle",
+        position: { x: 10.0, y: 10.0 },
+        width: 90.0,
+        height: 50.0,
+        borderWidth: 1,
+        borderColor: "#000000",
+      },
+      field11bc: {
+        type: "code128",
+        content: "1440397002011",
+        position: { x: 14.0, y: 14.0 },
+        backgroundColor: "#ffffff",
+        barColor: "#000000",
+        textColor: "#000000",
+        includetext: true,
+        width: 36.0,
+        height: 12.0,
+      },
+      field12brand: {
+        type: "text",
+        content: "ザ・リラクス",
+        position: { x: 56.0, y: 14.0 },
+        width: 40.0,
+        height: 4.0,
+        fontSize: 10,
+        fontColor: "#000000",
+        fontName: "ipaexg",
+      },
+      field13item: {
+        type: "text",
+        content: "【S】スカーフカラーシャツ\nホワイト48",
+        position: { x: 56.0, y: 20.0 },
+        width: 40.0,
+        height: 12.0,
+        fontSize: 10,
+        fontColor: "#000000",
+        fontName: "ipaexg",
+      },
+      field14bendorid: {
+        type: "text",
+        content: "24FW-REBL-432L-J",
+        position: { x: 14.0, y: 28.0 },
+        width: 40.0,
+        height: 4.0,
+        fontSize: 10,
+        fontColor: "#000000",
+        fontName: "ipaexg",
+      },
+      field15size: {
+        type: "text",
+        content: "48",
+        position: { x: 14.0, y: 36.0 },
+        width: 10.0,
+        height: 4.0,
+        fontSize: 10,
+        fontColor: "#000000",
+        fontName: "ipaexg",
+      },
+      field16color: {
+        type: "text",
+        content: "030WHITE",
+        position: { x: 28.0, y: 36.0 },
+        width: 40.0,
+        height: 4.0,
+        fontSize: 10,
+        fontColor: "#000000",
+        fontName: "ipaexg",
+      },
+      field17price: {
+        type: "text",
+        content: "32,000",
+        position: { x: 72.0, y: 36.0 },
+        width: 24.0,
+        height: 4.0,
+        fontSize: 10,
+        fontColor: "#000000",
+        fontName: "ipaexg",
+      },
+      field18saisun: {
+        type: "text",
+        content: "要\n（採寸・素材・原産国・備考全て）\n\n",
+        position: { x: 14.0, y: 44.0 },
+        width: 82.0,
+        height: 12.0,
+        fontSize: 10,
+        fontColor: "#000000",
+        fontName: "ipaexg",
+      },
+      field20req: {
+        type: "rectangle",
+        position: { x: 10.0, y: 65.0 },
+        width: 90.0,
+        height: 50.0,
+        borderWidth: 1,
+        borderColor: "#000000",
+      },
+      field30req: {
+        type: "rectangle",
+        position: { x: 10.0, y: 120.0 },
+        width: 90.0,
+        height: 50.0,
+        borderWidth: 1,
+        borderColor: "#000000",
+      },
+      field40req: {
+        type: "rectangle",
+        position: { x: 10.0, y: 175.0 },
+        width: 90.0,
+        height: 50.0,
+        borderWidth: 1,
+        borderColor: "#000000",
+      },
+      field50req: {
+        type: "rectangle",
+        position: { x: 10.0, y: 230.0 },
+        width: 90.0,
+        height: 50.0,
+        borderWidth: 1,
+        borderColor: "#000000",
+      },
+      field60req: {
+        type: "rectangle",
+        position: { x: 110.0, y: 10.0 },
+        width: 90.0,
+        height: 50.0,
+        borderWidth: 1,
+        borderColor: "#000000",
+      },
+      field70req: {
+        type: "rectangle",
+        position: { x: 110.0, y: 65.0 },
+        width: 90.0,
+        height: 50.0,
+        borderWidth: 1,
+        borderColor: "#000000",
+      },
+      field80req: {
+        type: "rectangle",
+        position: { x: 110.0, y: 120.0 },
+        width: 90.0,
+        height: 50.0,
+        borderWidth: 1,
+        borderColor: "#000000",
+      },
+      field90req: {
+        type: "rectangle",
+        position: { x: 110.0, y: 175.0 },
+        width: 90.0,
+        height: 50.0,
+        borderWidth: 1,
+        borderColor: "#000000",
+      },
+      field100req: {
+        type: "rectangle",
+        position: { x: 110.0, y: 230.0 },
+        width: 90.0,
+        height: 50.0,
+        borderWidth: 1,
+        borderColor: "#000000",
+      },
+    },
+  ],
+  basePdf: { width: 210, height: 297, padding: [10, 10, 10, 10] },
+};
+
+const createFile = (pathName, source) => {
+  const toJSON = JSON.stringify(source);
+  fs.writeFile(pathName, toJSON, (err) => {
+    if (err) rej(err);
+    if (!err) {
+      console.log("JSONファイルを生成しました");
+    }
+  });
+};
+createFile("newObj.json", testObj);
